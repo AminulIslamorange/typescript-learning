@@ -3,14 +3,27 @@
 
 
 
-let bazarList :string[]=['milk','egg','potato','suger'];
+let bazarList: string[] = ['milk', 'egg', 'potato', 'suger'];
 
 
 bazarList.push()
 
-let mixedArray : (string | number)[] =['egg',12, 'milk',1, 'suger',2];
+let mixedArray: (string | number)[] = ['egg', 12, 'milk', 1, 'suger', 2];
 
 mixedArray.push(12)
 
 
-let couple:[string,string]=['husband','wife']
+let couple: [string, string] = ['husband', 'wife']
+
+
+// refernce type
+let name: {
+    firstName: string;
+    midleName?: string;
+    //  optional type 
+    lastName: string
+} = {
+    firstName: "aminul",
+    midleName: 'islam',
+    lastName: 'khan'
+}
