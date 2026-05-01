@@ -6,4 +6,3 @@
 let username:string='aminul';
 
 username='orange'
-username=123
