@@ -1,0 +1,33 @@
+// const createArryWithString=(value:string)=>[value]
+
+
+// const createArrayWithNumber=(value:number)=>[value];
+// const createArrayWithObject=(value:{
+//     id:number;
+//     name:string;
+// })=>[value];
+
+
+const createArryWithGeneric=<T>(value:T)=>{
+    return []
+}
+
+
+const arrString=createArryWithGeneric( 'apple')
+const numString=createArryWithGeneric(222)
+const arrObject=createArryWithGeneric({
+    id:123,
+    name:'next Level'
+})
+
+
+// tuple
+
+const createArryWithTuple=(param1:string,param2:number)=>[param1,param2]
+
+const createArryTupleWithGeneric=<X,Y>(param1:X,param2:Y)=>[param1,param2]
+
+const res1=createArryTupleWithGeneric('mezba',false)
+const res2=createArryTupleWithGeneric(222,{
+    name:'orange'
+})
